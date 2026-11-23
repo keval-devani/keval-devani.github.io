@@ -4,36 +4,28 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex">
   <title>OG image source</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Space+Grotesk:wght@600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500&display=swap">
   <style>
     html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
     body {
-      font-family: "Inter", system-ui, sans-serif; color: #e8ecf4;
-      background:
-        radial-gradient(ellipse 60% 80% at 80% 40%, rgba(47,84,235,.45), transparent 70%),
-        linear-gradient(rgba(125,151,255,.07) 1px, transparent 1px) 0 0 / 40px 40px,
-        linear-gradient(90deg, rgba(125,151,255,.07) 1px, transparent 1px) 0 0 / 40px 40px,
-        #0b0f17;
-      display: flex; align-items: center; padding: 0 80px; box-sizing: border-box; gap: 64px;
+      font-family: "IBM Plex Sans", system-ui, sans-serif; color: #eef0f5; background: #0b0d14;
+      display: flex; align-items: center; padding: 0 88px; box-sizing: border-box; gap: 72px;
     }
     .copy { flex: 1; }
-    .tag { display: inline-block; padding: 8px 16px; border-radius: 999px; border: 1px solid #253047; background: #141b29; color: #b3bccd; font-size: 22px; font-weight: 500; }
-    .tag b { display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: #3ecf85; margin-right: 10px; vertical-align: 1px; }
-    h1 { font-family: "Space Grotesk", sans-serif; font-size: 84px; line-height: 1; margin: 28px 0 0; letter-spacing: -.02em; }
-    .role { font-family: "Space Grotesk", sans-serif; font-size: 36px; color: #7d97ff; font-weight: 600; margin-top: 14px; }
-    .stack { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 10px; }
-    .stack span { font-size: 22px; padding: 8px 16px; border-radius: 12px; background: #1a2233; border: 1px solid #253047; color: #e8ecf4; font-weight: 500; }
-    .url { margin-top: 36px; font-size: 24px; color: #8691a8; }
-    img { width: 330px; height: 330px; border-radius: 50%; box-shadow: 0 30px 60px -20px rgba(0,0,0,.7); }
+    .status { display: flex; align-items: center; gap: 14px; font-size: 24px; color: #a3a9b8; }
+    .led { width: 12px; height: 12px; border-radius: 50%; background: #4cc38a; box-shadow: 0 0 0 5px rgba(76,195,138,.18); }
+    h1 { font-size: 88px; line-height: 1; margin: 32px 0 0; font-weight: 500; letter-spacing: -.03em; }
+    .role { font-size: 34px; color: #a3a9b8; margin-top: 18px; }
+    .meta { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(238,240,245,.14); font-family: "IBM Plex Mono", monospace; font-size: 22px; color: #7a8296; }
+    img { width: 340px; height: 340px; border-radius: 50%; }
   </style>
 </head>
 <body>
   <div class="copy">
-    <span class="tag"><b></b>Open to freelance &amp; contract work</span>
+    <div class="status"><span class="led"></span>Open to freelance &amp; contract work</div>
     <h1>Keval Devani</h1>
     <div class="role">Senior Flutter &amp; Mobile IoT Engineer</div>
-    <div class="stack"><span>BLE · OTA</span><span>MQTT</span><span>AWS IoT</span><span>ThingsBoard</span><span>Firebase</span></div>
-    <div class="url">keval-devani.github.io · 9+ years · 36+ apps shipped</div>
+    <div class="meta">BLE · OTA · MQTT · AWS IoT · ThingsBoard</div>
   </div>
   <img src="assets/img/avatar.jpg" alt="">
 </body>

@@ -1,7 +1,6 @@
 // Small enhancements only; the page works fully without JavaScript.
 (function () {
   var root = document.documentElement;
-  root.classList.add('js');
 
   // ----- Theme toggle -----
   var themeBtn = document.querySelector('.theme-toggle');
@@ -13,7 +12,6 @@
     return systemDark.matches ? 'dark' : 'light';
   }
   function updateThemeLabel() {
-    if (!themeBtn) return;
     var next = currentTheme() === 'dark' ? 'light' : 'dark';
     themeBtn.setAttribute('aria-label', 'Switch to ' + next + ' theme');
   }
@@ -37,7 +35,7 @@
     menuBtn.setAttribute('aria-expanded', String(open));
     menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
   }
-  if (menuBtn && nav) {
+  if (header && menuBtn && nav) {
     menuBtn.addEventListener('click', function () {
       setMenu(!header.classList.contains('menu-open'));
     });
@@ -52,31 +50,19 @@
     });
   }
 
-  // ----- Header border on scroll -----
-  function onScroll() { header.classList.toggle('scrolled', window.scrollY > 8); }
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  // ----- Header hairline once the page scrolls -----
+  if (header) {
+    var onScroll = function () { header.classList.toggle('scrolled', window.scrollY > 8); };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
 
   // ----- Footer year -----
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 
-  // ----- Reveal on scroll + active nav link -----
-  if (!('IntersectionObserver' in window)) {
-    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
-    return;
-  }
-
-  var revealer = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('in');
-        revealer.unobserve(entry.target);
-      }
-    });
-  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
-  document.querySelectorAll('.reveal').forEach(function (el) { revealer.observe(el); });
-
+  // ----- Highlight the nav link for the section in view -----
+  if (!('IntersectionObserver' in window)) return;
   var links = {};
   document.querySelectorAll('.nav a[href^="#"]').forEach(function (a) {
     links[a.getAttribute('href').slice(1)] = a;
@@ -84,11 +70,9 @@
   var spy = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       var link = links[entry.target.id];
-      if (!link) return;
-      if (entry.isIntersecting) {
-        Object.keys(links).forEach(function (k) { links[k].classList.remove('active'); });
-        link.classList.add('active');
-      }
+      if (!link || !entry.isIntersecting) return;
+      Object.keys(links).forEach(function (k) { links[k].classList.remove('active'); });
+      link.classList.add('active');
     });
   }, { rootMargin: '-45% 0px -50% 0px' });
   Object.keys(links).forEach(function (id) {
