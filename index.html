@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keval Devani · Senior Flutter & Mobile IoT Engineer</title>
+  <meta name="description" content="Keval Devani builds production Flutter and Android apps for connected devices: BLE, Wi-Fi and LoRaWAN hardware, with AWS, Firebase and ThingsBoard backends. 9+ years, 36+ apps shipped. Open to freelance and contract work.">
+  <meta name="author" content="Keval Devani">
+  <link rel="canonical" href="https://keval-devani.github.io/">
+  <meta name="theme-color" content="#f7f8fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0f17" media="(prefers-color-scheme: dark)">
+
+  <!-- Social previews -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://keval-devani.github.io/">
+  <meta property="og:title" content="Keval Devani · Senior Flutter & Mobile IoT Engineer">
+  <meta property="og:description" content="Flutter apps for real-world hardware: BLE, OTA updates, MQTT, AWS IoT and ThingsBoard. 9+ years, 36+ apps shipped.">
+  <meta property="og:image" content="https://keval-devani.github.io/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="profile:first_name" content="Keval">
+  <meta property="profile:last_name" content="Devani">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Keval Devani · Senior Flutter & Mobile IoT Engineer">
+  <meta name="twitter:description" content="Flutter apps for real-world hardware: BLE, OTA updates, MQTT, AWS IoT and ThingsBoard.">
+  <meta name="twitter:image" content="https://keval-devani.github.io/assets/img/og-image.png">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Apply saved theme before paint to avoid a flash -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Keval Devani",
+    "url": "https://keval-devani.github.io/",
+    "image": "https://keval-devani.github.io/assets/img/avatar.jpg",
+    "jobTitle": "Senior Flutter & Mobile IoT Engineer",
+    "email": "mailto:kevaldevani101@gmail.com",
+    "address": { "@type": "PostalAddress", "addressCountry": "IN" },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Sarvajanik College of Engineering & Technology (SCET), Gujarat Technological University"
+    },
+    "knowsAbout": ["Flutter", "Dart", "Android", "Kotlin", "Bluetooth Low Energy", "OTA firmware updates", "MQTT", "AWS IoT Core", "ThingsBoard", "Firebase", "LoRaWAN", "LLM integration"],
+    "sameAs": [
+      "https://github.com/keval-devani",
+      "https://www.linkedin.com/in/keval-devani",
+      "https://www.upwork.com/freelancers/~01cc1b3bab838f6fc2"
+    ]
+  }
+  </script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Reusable icons -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+    <symbol id="i-upwork" viewBox="0 0 24 24"><path fill="currentColor" d="M18.56 13.68c-1.06 0-2.05-.45-2.95-1.18l.22-1.03.01-.04c.2-1.1.82-2.94 2.72-2.94a2.6 2.6 0 0 1 2.6 2.6 2.6 2.6 0 0 1-2.6 2.59Zm0-7.82c-2.43 0-4.31 1.58-5.08 4.18-1.17-1.76-2.06-3.87-2.58-5.65H8.29v6.82a2.36 2.36 0 0 1-2.35 2.36 2.36 2.36 0 0 1-2.35-2.36V4.39H.98v6.82a4.98 4.98 0 0 0 4.96 5 4.97 4.97 0 0 0 4.96-5v-1.14c.52 1.08 1.15 2.17 1.92 3.13l-1.63 7.66h2.67l1.16-5.56c1.01.65 2.18 1.06 3.53 1.06a5.25 5.25 0 0 0 5.24-5.24 5.25 5.25 0 0 0-5.24-5.26Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11Zm0 .5 9 6 9-6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7m0 0H9m8 0v8"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></g></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></symbol>
+    <symbol id="i-bluetooth" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m7 7 10 10-5 4.5V2.5L17 7 7 17"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M7 18.5a4.5 4.5 0 0 1-.6-8.96A6 6 0 0 1 18 8.5a4.5 4.5 0 0 1 0 10H7Z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></g></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 3c.6 4.2 2.8 6.4 7 7-4.2.6-6.4 2.8-7 7-.6-4.2-2.8-6.4-7-7 4.2-.6 6.4-2.8 7-7Zm6.5 11.5c.25 1.6 1 2.35 2.5 2.5-1.5.25-2.25 1-2.5 2.5-.25-1.5-1-2.25-2.5-2.5 1.5-.15 2.25-.9 2.5-2.5Z"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.2 10.2a1.5 1.5 0 0 0 1.47 1.18h8.66a1.5 1.5 0 0 0 1.46-1.15L20.5 8H6.1"/><circle cx="9.5" cy="19.5" r="1.2"/><circle cx="17" cy="19.5" r="1.2"/></g></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 3s6 6.4 6 11a6 6 0 0 1-12 0c0-4.6 6-11 6-11Z"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3M12 14.5v2"/></g></symbol>
+    <symbol id="i-fan" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><circle cx="12" cy="12" r="1.6"/><path d="M12 10.4C11 7 11.8 3.5 14.5 3.5c2.2 0 2.6 3.4-1 6.6M13.6 12c3.4-1 6.9-.2 6.9 2.5 0 2.2-3.4 2.6-6.6-1M12 13.6c1 3.4.2 6.9-2.5 6.9-2.2 0-2.6-3.4 1-6.6M10.4 12C7 13 3.5 12.2 3.5 9.5c0-2.2 3.4-2.6 6.6 1"/></g></symbol>
+    <symbol id="i-thermo" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M10 13.6V5a2 2 0 0 1 4 0v8.6a4 4 0 1 1-4 0Z"/><path d="M12 9v7.5"/></g></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 12h4l2-4 3 8 2-4h7M4.3 8.5A5 5 0 0 1 12 5.3a5 5 0 0 1 7.7 6.2"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="m8.2 10.8 7.6-3.6M8.2 13.2l7.6 3.6"/></g></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Keval Devani, back to top">
+        <span class="brand-mark" aria-hidden="true">KD</span>
+        <span class="brand-name">Keval Devani</span>
+      </a>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Switch color theme">
+          <svg class="icon icon-sun"><use href="#i-sun"/></svg>
+          <svg class="icon icon-moon"><use href="#i-moon"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <span class="bars" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="availability"><span class="dot" aria-hidden="true"></span>Open to freelance &amp; contract work · Remote</p>
+          <h1>Keval Devani</h1>
+          <p class="role">Senior Flutter &amp; Mobile IoT Engineer</p>
+          <p class="lead">I build production mobile apps that talk to real hardware: Bluetooth devices, Wi‑Fi and LoRaWAN‑connected products, and the cloud behind them on <strong>AWS</strong>, <strong>Firebase</strong> and <strong>ThingsBoard</strong>.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://www.upwork.com/freelancers/~01cc1b3bab838f6fc2" target="_blank" rel="noopener">
+              <svg class="icon"><use href="#i-upwork"/></svg>Hire me on Upwork
+            </a>
+            <a class="btn btn-ghost" href="mailto:kevaldevani101@gmail.com">
+              <svg class="icon"><use href="#i-mail"/></svg>Email me
+            </a>
+            <a class="btn btn-ghost" href="assets/Keval-Devani-Resume.pdf" download>
+              <svg class="icon"><use href="#i-download"/></svg>Resume
+            </a>
+          </div>
+          <ul class="socials" aria-label="Profiles">
+            <li><a href="https://github.com/keval-devani" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon"><use href="#i-github"/></svg></a></li>
+            <li><a href="https://www.linkedin.com/in/keval-devani" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a></li>
+            <li><a href="https://www.upwork.com/freelancers/~01cc1b3bab838f6fc2" target="_blank" rel="noopener" aria-label="Upwork"><svg class="icon"><use href="#i-upwork"/></svg></a></li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <div class="avatar-wrap">
+            <img class="avatar" src="assets/img/avatar.jpg" width="460" height="460" alt="Portrait of Keval Devani">
+            <span class="chip chip-ble"><svg class="icon"><use href="#i-bluetooth"/></svg>BLE · OTA</span>
+            <span class="chip chip-cloud"><svg class="icon"><use href="#i-cloud"/></svg>MQTT · AWS IoT</span>
+            <span class="chip chip-flutter"><svg class="icon"><use href="#i-phone"/></svg>Flutter · Kotlin</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <dl class="stats">
+          <div class="stat"><dt>Years building mobile apps</dt><dd>9+</dd></div>
+          <div class="stat"><dt>Apps shipped to Google Play &amp; App Store</dt><dd>36+</dd></div>
+          <div class="stat"><dt>Freelance client projects</dt><dd>15+</dd></div>
+          <div class="stat"><dt>Job Success Score · Top Rated on Upwork</dt><dd>100%</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">What I do</p>
+          <h2>Apps for connected devices, end to end</h2>
+          <p class="section-lead">From the Bluetooth link on the phone to the cloud backend, CI/CD and the store release. I've led small teams and run several client projects at once.</p>
+        </header>
+        <div class="card-grid four">
+          <article class="card service reveal">
+            <span class="card-icon"><svg class="icon"><use href="#i-bluetooth"/></svg></span>
+            <h3>Bluetooth &amp; device apps</h3>
+            <p>Direct-to-device features over BLE: sending device settings, reading uplinks and running OTA firmware updates. Wi‑Fi provisioning too.</p>
+          </article>
+          <article class="card service reveal">
+            <span class="card-icon"><svg class="icon"><use href="#i-cloud"/></svg></span>
+            <h3>IoT &amp; cloud backends</h3>
+            <p>Telemetry and control with MQTT, AWS IoT Core, Lambda and ThingsBoard, plus Firebase for auth, push and data. Offline-friendly sync.</p>
+          </article>
+          <article class="card service reveal">
+            <span class="card-icon"><svg class="icon"><use href="#i-phone"/></svg></span>
+            <h3>Flutter &amp; Android</h3>
+            <p>Clean, testable apps in Flutter and Kotlin/Jetpack Compose. Payments, maps, push notifications and migrations of legacy codebases.</p>
+          </article>
+          <article class="card service reveal">
+            <span class="card-icon"><svg class="icon"><use href="#i-spark"/></svg></span>
+            <h3>AI features</h3>
+            <p>LLM integration with Gemini, OpenAI and Claude APIs, streaming chat UIs, RAG and on-device ML, plus backend automations.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section alt" id="projects">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2>Projects</h2>
+          <p class="section-lead">A sample of the connected-device and product apps I've built for companies and freelance clients.</p>
+        </header>
+        <div class="card-grid three">
+          <article class="card project reveal">
+            <div class="project-top">
+              <span class="card-icon"><svg class="icon"><use href="#i-cart"/></svg></span>
+              <span class="project-meta">2026 · Freelance</span>
+            </div>
+            <h3>Freshberry Foods</h3>
+            <p>Two apps for a fresh-produce supplier: a customer app for placing and tracking orders, and a staff app for orders, purchasing, inventory and deliveries that reads a <strong>BLE weighing scale</strong> to record each item's exact weight. Also helped design the backend architecture.</p>
+            <ul class="tags"><li>Flutter</li><li>BLE</li><li>Backend design</li></ul>
+            <a class="card-link" href="https://play.google.com/store/apps/details?id=com.freshberryfoods" target="_blank" rel="noopener">View on Google Play<svg class="icon"><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="card project reveal">
+            <div class="project-top">
+              <span class="card-icon"><svg class="icon"><use href="#i-drop"/></svg></span>
+              <span class="project-meta">IoT</span>
+            </div>
+            <h3>Fluid Management System</h3>
+            <p>Connects directly to devices over Bluetooth to send settings, read uplinks and run OTA firmware updates, with data synced to the cloud.</p>
+            <ul class="tags"><li>Flutter</li><li>BLE</li><li>OTA</li><li>AWS</li></ul>
+          </article>
+          <article class="card project reveal">
+            <div class="project-top">
+              <span class="card-icon"><svg class="icon"><use href="#i-lock"/></svg></span>
+              <span class="project-meta">IoT · Retail</span>
+            </div>
+            <h3>Retail Smart Cabinets</h3>
+            <p>Store-operations app for LoRaWAN-connected smart cabinets: staff manage cabinets and open them from their phone.</p>
+            <ul class="tags"><li>Flutter</li><li>AWS</li><li>LoRaWAN</li></ul>
+          </article>
+          <article class="card project reveal">
+            <div class="project-top">
+              <span class="card-icon"><svg class="icon"><use href="#i-fan"/></svg></span>
+              <span class="project-meta">Smart home</span>
+            </div>
+            <h3>Vornado Smart Fans</h3>
+            <p>Companion app for setting up and controlling connected fans.</p>
+            <ul class="tags"><li>Flutter</li><li>BLE</li><li>Wi‑Fi</li></ul>
+          </article>
+          <article class="card project reveal">
+            <div class="project-top">
+              <span class="card-icon"><svg class="icon"><use href="#i-thermo"/></svg></span>
+              <span class="project-meta">Sensors</span>
+            </div>
+            <h3>Temperature &amp; Humidity Monitoring</h3>
+            <p>Sensor app with threshold alerts and analytics.</p>
+            <ul class="tags"><li>Flutter</li><li>BLE</li><li>Alerts</li></ul>
+          </article>
+          <article class="card project reveal">
+            <div class="project-top">
+              <span class="card-icon"><svg class="icon"><use href="#i-heart"/></svg></span>
+              <span class="project-meta">Healthcare</span>
+            </div>
+            <h3>Healthcare &amp; Telehealth</h3>
+            <p>Connects patient monitoring devices and supports video telehealth consultations.</p>
+            <ul class="tags"><li>Flutter</li><li>Devices</li><li>Video</li></ul>
+          </article>
+        </div>
+
+        <article class="card oss reveal">
+          <span class="card-icon"><svg class="icon"><use href="#i-share"/></svg></span>
+          <div class="oss-body">
+            <p class="eyebrow">Open source</p>
+            <h3>custom_social_share</h3>
+            <p>A Flutter plugin for sharing content to a specific social media app, or to all of them.</p>
+          </div>
+          <div class="oss-links">
+            <a class="btn btn-ghost btn-sm" href="https://github.com/keval-devani/custom_social_share" target="_blank" rel="noopener"><svg class="icon"><use href="#i-github"/></svg>GitHub</a>
+            <a class="btn btn-ghost btn-sm" href="https://pub.dev/packages/custom_social_share" target="_blank" rel="noopener">pub.dev<svg class="icon"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container narrow">
+        <header class="section-head reveal">
+          <p class="eyebrow">Career</p>
+          <h2>Experience</h2>
+        </header>
+        <ol class="timeline">
+          <li class="reveal">
+            <div class="tl-head">
+              <h3>Mobile Application Developer (IoT)</h3>
+              <span class="tl-date">May 2021 – Oct 2026</span>
+            </div>
+            <p class="tl-org">Viaanix, Inc.</p>
+            <ul>
+              <li>Built Flutter apps that connect users to IoT hardware and cloud services, using BLE, MQTT, Wi‑Fi, AWS and Firebase.</li>
+              <li>Built direct-to-device Bluetooth features: device settings, reading uplinks over BLE and OTA firmware updates.</li>
+              <li>Delivered apps for LoRaWAN-connected retail smart cabinets on AWS, including opening cabinets from the phone.</li>
+              <li>Added AI capabilities to company products and built backend automations that made operations more efficient.</li>
+            </ul>
+          </li>
+          <li class="reveal">
+            <div class="tl-head">
+              <h3>Freelance Flutter &amp; Android Developer</h3>
+              <span class="tl-date">June 2021 – Present</span>
+            </div>
+            <p class="tl-org">Upwork · Top Rated</p>
+            <ul>
+              <li>Delivered 15+ client projects across IoT, e-commerce, fintech and on-demand services with a 100% Job Success Score.</li>
+              <li>Took apps from Figma design to store launch: architecture, payments and subscriptions, maps and push notifications.</li>
+              <li>Modernized legacy apps: GetX/Provider to Riverpod/Bloc, XML views to Jetpack Compose, RxJava to Coroutines/Flow.</li>
+            </ul>
+          </li>
+          <li class="reveal">
+            <div class="tl-head">
+              <h3>Senior Flutter &amp; Android Developer</h3>
+              <span class="tl-date">Aug 2019 – May 2021</span>
+            </div>
+            <p class="tl-org">E Launch Solutions Pvt. Ltd.</p>
+            <ul>
+              <li>Led a development team: broke down requirements, set the tech stack and reviewed code.</li>
+              <li>Shipped Flutter and native Android apps with Firebase, payment gateways, Google Maps and real-time chat.</li>
+            </ul>
+          </li>
+          <li class="reveal">
+            <div class="tl-head">
+              <h3>Senior Android Developer</h3>
+              <span class="tl-date">July 2018 – July 2019</span>
+            </div>
+            <p class="tl-org">SCC Infotech LLP</p>
+            <ul>
+              <li>Built native Android apps in Kotlin/Java with MVVM, Room, Retrofit and Firebase; owned Play Store releases.</li>
+            </ul>
+          </li>
+          <li class="reveal">
+            <div class="tl-head">
+              <h3>Android Developer</h3>
+              <span class="tl-date">May 2017 – June 2018</span>
+            </div>
+            <p class="tl-org">Dream World InfoSoft</p>
+            <ul>
+              <li>Developed and maintained Android apps: REST APIs, SQLite, multi-language support and multi-screen layouts.</li>
+            </ul>
+          </li>
+        </ol>
+        <p class="education reveal"><strong>B.E. Information Technology</strong>, Sarvajanik College of Engineering &amp; Technology (SCET), Gujarat Technological University · 2013 – 2017</p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section alt" id="skills">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Toolbox</p>
+          <h2>Skills</h2>
+        </header>
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3>Cross-platform</h3>
+            <ul class="tags"><li>Flutter 3.x</li><li>Dart 3</li><li>Riverpod</li><li>Bloc / Cubit</li><li>go_router</li><li>freezed</li><li>Drift</li><li>Dio / Retrofit</li><li>Flutter Web</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Android &amp; iOS</h3>
+            <ul class="tags"><li>Kotlin</li><li>Jetpack Compose</li><li>Coroutines &amp; Flow</li><li>MVVM / MVI</li><li>Hilt</li><li>Room</li><li>KMP</li><li>Swift / SwiftUI basics</li><li>Platform channels</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>IoT &amp; connectivity</h3>
+            <ul class="tags"><li>BLE / GATT</li><li>flutter_blue_plus</li><li>OTA / DFU</li><li>Wi‑Fi provisioning</li><li>MQTT (QoS, TLS)</li><li>LoRaWAN devices</li><li>AWS IoT Core</li><li>ThingsBoard</li><li>WebSockets</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Cloud &amp; backend</h3>
+            <ul class="tags"><li>AWS Lambda</li><li>S3</li><li>API Gateway</li><li>Firebase Auth</li><li>Firestore</li><li>FCM</li><li>Cloud Functions</li><li>REST</li><li>JWT / OAuth2</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>AI</h3>
+            <ul class="tags"><li>Gemini / Firebase AI Logic</li><li>OpenAI</li><li>Claude API</li><li>Streaming chat UIs</li><li>RAG</li><li>ML Kit</li><li>LiteRT</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Quality &amp; DevOps</h3>
+            <ul class="tags"><li>Unit / widget / golden tests</li><li>Patrol</li><li>GitHub Actions</li><li>Codemagic</li><li>Fastlane</li><li>Shorebird</li><li>Sentry</li><li>Crashlytics</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Payments &amp; integrations</h3>
+            <ul class="tags"><li>In-app purchases</li><li>Subscriptions</li><li>Google Pay</li><li>Apple Pay</li><li>Stripe</li><li>Google Maps &amp; Places</li><li>Social login</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>AI dev tools</h3>
+            <ul class="tags"><li>Claude Code</li><li>Cursor</li><li>GitHub Copilot</li><li>Google Antigravity</li><li>MCP servers</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation -->
+    <section class="section" id="recommendation">
+      <div class="container narrow">
+        <figure class="quote reveal">
+          <blockquote>
+            <p>“Keval is an expert in Flutter and has extensive experience building mobile applications that connect users with IoT devices and cloud services.”</p>
+          </blockquote>
+          <figcaption><strong>Dali Basor</strong>, CTO, Viaanix <span class="muted">· full letter available on request</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <h2>Have a connected-device app in mind?</h2>
+          <p>I'm available for freelance and contract work, remote. Tell me about your hardware, your backend and where the app needs to go.</p>
+          <div class="cta-row center">
+            <a class="btn btn-primary" href="mailto:kevaldevani101@gmail.com"><svg class="icon"><use href="#i-mail"/></svg>kevaldevani101@gmail.com</a>
+            <a class="btn btn-ghost" href="https://www.upwork.com/freelancers/~01cc1b3bab838f6fc2" target="_blank" rel="noopener"><svg class="icon"><use href="#i-upwork"/></svg>Upwork</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/keval-devani" target="_blank" rel="noopener"><svg class="icon"><use href="#i-linkedin"/></svg>LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Keval Devani</p>
+      <p><a href="resume.html">Resume</a> · <a href="https://github.com/keval-devani/keval-devani.github.io" target="_blank" rel="noopener">Site source</a></p>
+    </div>
+  </footer>
+</body>
+</html>

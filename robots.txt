@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://keval-devani.github.io/sitemap.xml

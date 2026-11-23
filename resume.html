@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume · Keval Devani</title>
+  <meta name="description" content="Resume of Keval Devani, Senior Flutter Developer focused on mobile IoT and BLE apps.">
+  <link rel="canonical" href="https://keval-devani.github.io/resume.html">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <style>
+    :root { --ink: #121826; --ink-2: #3d4659; --muted: #6b7489; --line: #dfe4ee; --accent: #2f54eb; --bg: #eef1f7; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 10.5pt/1.45 "Inter", system-ui, -apple-system, "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: var(--accent); text-decoration: none; }
+    .page { max-width: 210mm; margin: 24px auto; background: #fff; padding: 16mm 15mm; box-shadow: 0 8px 32px rgba(18,24,38,.12); }
+    .bar { max-width: 210mm; margin: 16px auto 0; padding: 0 16px; display: flex; justify-content: space-between; gap: 12px; font-size: 14px; }
+    h1 { font-size: 22pt; margin: 0; letter-spacing: -.02em; }
+    .headline { margin-top: 2px; font-weight: 600; color: var(--accent); font-size: 11.5pt; }
+    .contact { margin-top: 6px; color: var(--ink-2); font-size: 9.5pt; }
+    .contact span + span::before { content: "·"; margin: 0 6px; color: var(--muted); }
+    h2 { font-size: 10pt; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin: 16px 0 6px; padding-bottom: 4px; border-bottom: 1.5px solid var(--line); }
+    p { margin: 0; }
+    ul { margin: 4px 0 0; padding-left: 16px; }
+    li { margin-top: 2px; }
+    .job { margin-top: 9px; break-inside: avoid; }
+    .job-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+    .job-head strong { font-size: 10.5pt; }
+    .date { color: var(--muted); font-size: 9.5pt; white-space: nowrap; }
+    table { width: 100%; border-collapse: collapse; font-size: 9.5pt; }
+    td { padding: 3px 0; vertical-align: top; border-bottom: 1px solid #f0f2f7; }
+    td:first-child { width: 30%; font-weight: 600; padding-right: 10px; }
+    blockquote { margin: 0; padding: 6px 12px; border-left: 3px solid var(--accent); color: var(--ink-2); font-style: italic; }
+    .projects li { margin-top: 4px; }
+    @media (max-width: 700px) {
+      .page { margin: 12px; padding: 20px 16px; }
+      .job-head { flex-direction: column; gap: 0; }
+      td:first-child { width: 36%; }
+    }
+    @page { size: A4; margin: 12mm 13mm; }
+    @media print {
+      body { background: #fff; font-size: 9pt; line-height: 1.38; }
+      .bar { display: none; }
+      .page { margin: 0; padding: 0; box-shadow: none; max-width: none; }
+      h1 { font-size: 20pt; }
+      .headline { font-size: 10.5pt; }
+      .contact { font-size: 8.8pt; }
+      h2 { break-after: avoid; page-break-after: avoid; margin: 12px 0 5px; font-size: 9pt; }
+      table { font-size: 8.8pt; }
+      td { padding: 2px 0; }
+      li { margin-top: 1px; }
+      .job { margin-top: 7px; }
+      .date { font-size: 8.8pt; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bar"><a href="./">← Back to portfolio</a><a href="assets/Keval-Devani-Resume.pdf" download>Download PDF</a></div>
+  <main class="page">
+    <h1>Keval Devani</h1>
+    <p class="headline">Senior Flutter Developer · Mobile IoT &amp; BLE Apps (MQTT · AWS IoT · ThingsBoard) · AI Integration</p>
+    <p class="contact">
+      <span>Remote · Open to freelance &amp; contract work</span>
+      <span><a href="mailto:kevaldevani101@gmail.com">kevaldevani101@gmail.com</a></span>
+      <span><a href="https://keval-devani.github.io">keval-devani.github.io</a></span>
+      <span><a href="https://www.linkedin.com/in/keval-devani">LinkedIn</a></span>
+      <span><a href="https://github.com/keval-devani">GitHub</a></span>
+      <span><a href="https://www.upwork.com/freelancers/~01cc1b3bab838f6fc2">Upwork (Top Rated)</a></span>
+    </p>
+
+    <h2>Professional summary</h2>
+    <p>Senior mobile engineer with <strong>9+ years</strong> building production Android and cross-platform apps, including <strong>7+ years in Flutter/Dart</strong> and <strong>36+ apps shipped</strong> to Google Play and the App Store. Specializes in <strong>connected-device apps</strong>: BLE device configuration, reading uplinks and OTA firmware updates; Wi‑Fi and LoRaWAN-connected hardware; and cloud backends on <strong>AWS</strong>, <strong>Firebase</strong> and <strong>ThingsBoard</strong>. Works end to end, from architecture and the cloud backend through CI/CD and store release, and has added AI features and backend automations to production products. Has led small teams and run several client projects at once, both in-house and as a <strong>Top Rated</strong> freelancer on Upwork.</p>
+
+    <h2>Core skills</h2>
+    <table>
+      <tr><td>Cross-platform</td><td>Flutter 3.x, Dart 3 (records, patterns, sealed classes), Riverpod 3, Bloc/Cubit, go_router, freezed, Drift, Dio/Retrofit, Impeller, Flutter Web/Desktop</td></tr>
+      <tr><td>Android / native</td><td>Kotlin 2.x, Jetpack Compose, Coroutines &amp; Flow, MVVM/MVI, Clean Architecture, Hilt, Room, Retrofit/Ktor, WorkManager, Kotlin Multiplatform (KMP); Java (legacy)</td></tr>
+      <tr><td>iOS</td><td>Swift/SwiftUI basics, platform channels, App Store Connect, TestFlight</td></tr>
+      <tr><td>IoT &amp; connectivity</td><td>BLE (GATT, flutter_blue_plus, device configuration, uplink parsing, OTA/DFU firmware updates), Wi‑Fi device provisioning, MQTT (QoS, TLS), LoRaWAN-connected devices (app side), AWS IoT Core, ThingsBoard, WebSockets, Socket.io</td></tr>
+      <tr><td>Cloud &amp; backend</td><td>AWS (IoT Core, Lambda, S3, API Gateway), Firebase (Auth, Firestore, FCM, Crashlytics, Remote Config, Cloud Functions), REST, JWT/OAuth2, backend automations</td></tr>
+      <tr><td>AI</td><td>LLM integration (Gemini/Firebase AI Logic, OpenAI, Claude APIs), streaming chat UIs, RAG, on-device ML (ML Kit, LiteRT/TensorFlow Lite)</td></tr>
+      <tr><td>Payments &amp; integrations</td><td>In-App Purchases/subscriptions, Google Pay, Apple Pay, Stripe/payment gateways, Google Maps &amp; Places, social login</td></tr>
+      <tr><td>Quality &amp; DevOps</td><td>Unit/widget/golden/integration tests, Patrol, GitHub Actions, Codemagic, Fastlane, Shorebird code push, Sentry, Crashlytics, secure storage, certificate pinning, code obfuscation</td></tr>
+      <tr><td>Tools</td><td>Android Studio, VS Code, IntelliJ IDEA, Xcode, Android CLI, Figma, Git (GitHub/GitLab/Bitbucket), Jira</td></tr>
+      <tr><td>AI dev tools</td><td>Claude Code, Google Antigravity, Cursor, GitHub Copilot, MCP servers: agentic coding, code review, test generation and tool integrations</td></tr>
+    </table>
+
+    <h2>Professional experience</h2>
+    <div class="job">
+      <div class="job-head"><span><strong>Viaanix, Inc.</strong> · Mobile Application Developer (IoT)</span><span class="date">May 2021 – Oct 2026</span></div>
+      <ul>
+        <li>Built Flutter apps that connect users to IoT hardware and cloud services, using BLE, MQTT, Wi‑Fi, AWS backend services and Firebase.</li>
+        <li>Built direct-to-device Bluetooth features: sending device settings, reading uplinks over BLE, and over-the-air (OTA) firmware updates.</li>
+        <li>Delivered apps for LoRaWAN-connected retail smart cabinets on AWS, including opening cabinets from the phone for store staff.</li>
+        <li>Added AI capabilities to company products and built backend automations that made operations more efficient.</li>
+        <li>Shipped push notifications, local storage and offline-friendly data handling across several connected-device products.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-head"><span><strong>Upwork</strong> · Freelance Flutter &amp; Android Developer (Top Rated)</span><span class="date">June 2021 – Present</span></div>
+      <ul>
+        <li>Delivered 15+ client projects across IoT, e-commerce, fintech and on-demand services, keeping a 100% Job Success Score.</li>
+        <li>Builds web apps for clients alongside their mobile apps, sharing the same backend and APIs.</li>
+        <li>Took apps from Figma design to store launch: architecture, payments/subscriptions, maps and push notifications.</li>
+        <li>Modernized legacy apps by migrating GetX/Provider to Riverpod/Bloc, XML views to Jetpack Compose, and RxJava to Coroutines/Flow.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-head"><span><strong>E Launch Solutions Pvt. Ltd.</strong> · Senior Flutter &amp; Android Developer</span><span class="date">Aug 2019 – May 2021</span></div>
+      <ul>
+        <li>Led a development team: broke down requirements, set the tech stack and reviewed code.</li>
+        <li>Shipped Flutter and native Android apps with Firebase backends, payment gateways, Google Maps and real-time chat (Socket.io).</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-head"><span><strong>SCC Infotech LLP</strong> · Senior Android Developer</span><span class="date">July 2018 – July 2019</span></div>
+      <ul><li>Built native Android apps in Kotlin/Java with MVVM, Room, Retrofit and Firebase; owned Play Store releases.</li></ul>
+    </div>
+    <div class="job">
+      <div class="job-head"><span><strong>Dream World InfoSoft</strong> · Android Developer</span><span class="date">May 2017 – June 2018</span></div>
+      <ul><li>Developed and maintained Android apps: REST API integration, SQLite, multi-language support and multi-screen layouts.</li></ul>
+    </div>
+
+    <h2>Selected projects</h2>
+    <ul class="projects">
+      <li><strong><a href="https://play.google.com/store/apps/details?id=com.freshberryfoods">Freshberry Foods</a></strong> (Flutter, BLE, 2026, freelance): Two apps for a fresh-produce supplier. A <strong>customer app</strong> for placing and tracking orders, and an <strong>internal staff app</strong> for orders, purchasing, inventory and deliveries that reads a <strong>BLE weighing scale</strong> to record the exact weight of each item. Also helped design the backend system architecture.</li>
+      <li><strong>Fluid Management System</strong> (Flutter, BLE, AWS): App that connects directly to devices over Bluetooth to send settings, read uplinks and run OTA firmware updates, with cloud-synced data.</li>
+      <li><strong>Retail Smart Cabinets</strong> (Flutter, AWS, LoRaWAN-connected hardware): Store-operations app for managing cabinets and opening them from the phone.</li>
+      <li><strong>Vornado Smart Fans</strong> (Flutter, BLE, Wi‑Fi): Companion app for controlling and setting up connected fans.</li>
+      <li><strong>Temperature &amp; Humidity Monitoring</strong> (Flutter, BLE): Sensor app with threshold alerts and analytics.</li>
+      <li><strong>Healthcare &amp; Telehealth</strong> (Flutter): Connects patient monitoring devices and supports video telehealth consultations.</li>
+    </ul>
+
+    <h2>Recommendation</h2>
+    <blockquote>“Keval is an expert in Flutter and has extensive experience building mobile applications that connect users with IoT devices and cloud services.”<br><span style="font-style:normal">— <strong>Dali Basor, CTO, Viaanix</strong> (full letter available on request)</span></blockquote>
+
+    <h2>Education</h2>
+    <div class="job-head"><span><strong>Bachelor of Engineering, Information Technology</strong> · Sarvajanik College of Engineering &amp; Technology (SCET), Gujarat Technological University</span><span class="date">2013 – 2017</span></div>
+  </main>
+</body>
+</html>
