@@ -217,7 +217,7 @@ code { font-family: var(--mono); font-size: .95em; }
 .hero { padding: 48px 0 64px; overflow-x: clip; }
 @media (min-width: 900px) { .hero { padding: 96px 0 80px; } }
 .hero-grid { display: grid; gap: 48px; align-items: center; }
-@media (min-width: 900px) { .hero-grid { grid-template-columns: 1.3fr 1fr; gap: 64px; } }
+@media (min-width: 900px) { .hero-grid { grid-template-columns: 1fr 1.3fr; gap: 64px; } }
 
 .status { display: inline-flex; align-items: center; gap: 12px; font-size: 14px; line-height: 20px; color: var(--text-2); }
 .hero h1 {
@@ -233,8 +233,10 @@ code { font-family: var(--mono); font-size: .95em; }
   width: min(380px, 80vw); aspect-ratio: 1; border-radius: 50%; object-fit: cover;
   background: var(--surface);
   box-shadow: var(--shadow-md);
+  outline: 1px solid var(--hairline-strong); outline-offset: 8px;
 }
-@media (min-width: 900px) { .hero-visual { justify-content: flex-end; } }
+/* Photo sits left of the text on desktop so the subject turns toward the headline */
+@media (min-width: 900px) { .hero-visual { order: -1; justify-content: flex-start; } }
 
 /* One entrance on load: hero copy and portrait fade and rise */
 @media (prefers-reduced-motion: no-preference) {
